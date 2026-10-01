@@ -5,7 +5,7 @@ const isLocal = window.location.hostname === 'localhost' || window.location.host
 const OVERRIDE = (window.__EDUCHECK_API__ || '').trim();
 
 export const CONFIG = {
-  API_BASE: OVERRIDE || (isLocal ? 'http://localhost:8000' : 'https://education-check-ai.onrender.com'),
+  API_BASE: OVERRIDE || (isLocal ? 'http://localhost:8000' : 'https://education-check-ai-back.onrender.com'),
   TOKEN_KEY: 'educheck.access',
   REFRESH_KEY: 'educheck.refresh',
   USER_KEY: 'educheck.user',
